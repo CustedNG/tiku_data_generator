@@ -19,6 +19,10 @@ answer_convert_map = {
 }
 
 
+def parse_not_implement():
+    raise NotImplementedError()
+
+
 # [doc_dir]: 'xxx/'
 def docx2txt(doc_dir):
     skip_files = []
@@ -49,6 +53,8 @@ def docx2txt(doc_dir):
 
 def parse_maogai():
     doc_dir = 'maogai/'
+    difficulty_locator = '【难易程度】'
+    answer_locator = '【正确答案】'
     docx2txt(doc_dir)
     for file in os.listdir(doc_dir):
         if not file.endswith('.txt'):
@@ -61,7 +67,7 @@ def parse_maogai():
         f.close()
         for i in range(len(lines)):
             # 根据题号分割题目
-            if re.match(r'[0-9]+(、|\.)', lines[i]):
+            if re.match(r'( )*[1-9]+.*', lines[i]):
                 idx_len = len(idxes)
                 if idx_len == 0 or idx_len == 1:
                     idxes.append(i)
@@ -79,7 +85,6 @@ def parse_maogai():
             title = ti_raw[0][2:].strip()
 
             # 解析答案
-            answer_locator = '【正确答案】'
             answer_raw = ''
             for item in ti_raw:
                 if answer_locator in item:
@@ -102,8 +107,14 @@ def parse_maogai():
 
             # 解析选项
             options = []
-            for option in ti_raw[1:-2]:
-                options.append(option[2:].strip())
+            print(ti_raw[1:-2])
+            if ti_type == 3:
+                options = ['对', '错']
+            else:
+                for option in ti_raw[1:-2]:
+                    if answer_locator in option or difficulty_locator in option or not option:
+                        continue
+                    options.append(option[2:].strip())
 
             # 添加解析完成的题目到列表
             ti_list.append({
@@ -117,11 +128,7 @@ def parse_maogai():
         print(f'第一题解析结果：{ti_list[0]}')
 
         with open(doc_dir + file.replace('.txt', '.json'), 'w') as f:
-            f.write(json.dumps(ti_list, ensure_ascii=False))
-
-
-def parse_not_implement():
-    raise NotImplementedError()
+            f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
 
 
 subject_map = {
