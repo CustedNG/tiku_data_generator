@@ -1,3 +1,4 @@
+import json
 import re
 import os
 import docx
@@ -26,10 +27,7 @@ def docx2txt(doc_dir):
             if not i.endswith('.txt') and not i.endswith('.json') and not i == '.DS_Store':
                 skip_files.append(i)
             continue
-        # 每个循环中docx文档和txt文档的命名
-        gen_txt = doc_dir + i.replace('.docx', '.txt')
-        # 新建和打开txt文档
-        f = open(gen_txt, 'w')
+        f = open(doc_dir + i.replace('.docx', '.txt'), 'w')
         # 打开docx的文档并读入名为file的变量中
         file = docx.Document(doc_dir + i)
         # 输入docx中的段落数，以检查是否空文档
@@ -46,6 +44,7 @@ def docx2txt(doc_dir):
 
     if len(skip_files) > 0:
         raise Exception('\n以下文件由于格式问题，没有转换：\n' + str(skip_files))
+    return
 
 
 def parse_maogai():
@@ -76,21 +75,49 @@ def parse_maogai():
         for ti_raw in raw_list:
             if len(ti_raw) == 0:
                 continue
+            # 解析标题
             title = ti_raw[0][2:].strip()
+
+            # 解析答案
+            answer_locator = '【正确答案】'
+            answer_raw = ''
+            for item in ti_raw:
+                if answer_locator in item:
+                    answer_raw = item.replace(answer_locator, '').strip()
+
+            answer = []
+            answer_len = len(answer_raw)
+            if answer_len == 1:
+                answer = [answer_convert_map[answer_raw]]
+            else:
+                for item in answer_raw:
+                    answer.append(answer_convert_map[item])
+
+            # 解析类型
+            ti_type = 0
+            if '对' in answer_raw or '错' in answer_raw or '是' in answer_raw or '否' in answer_raw:
+                ti_type = 3
+            elif answer_len > 1:
+                ti_type = 1
+
+            # 解析选项
             options = []
             for option in ti_raw[1:-2]:
                 options.append(option[2:].strip())
-            answer = ti_raw[-2].replace('【正确答案】', '').strip()
 
+            # 添加解析完成的题目到列表
             ti_list.append({
                 'title': title,
                 'options': options,
                 'answer': answer,
-                'type': 1
+                'type': ti_type
             })
 
         print(f'{file}: {len(ti_list)}题')
         print(f'第一题解析结果：{ti_list[0]}')
+
+        with open(doc_dir + file.replace('.txt', '.json'), 'w') as f:
+            f.write(json.dumps(ti_list, ensure_ascii=False))
 
 
 def parse_not_implement():
