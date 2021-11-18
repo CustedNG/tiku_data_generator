@@ -1,3 +1,5 @@
+from typing import Any
+
 import json
 import re
 import os
@@ -63,7 +65,7 @@ def parse_maogai():
         if not file.endswith('.txt'):
             continue
         # 题目列表，纯str
-        raw_list = []
+        raw_list: [str] = []
         idx = 0
         f = open(doc_dir + '/' + file, 'r')
         lines = f.readlines()
@@ -90,8 +92,9 @@ def parse_maogai():
                 if answer_locator in item:
                     answer_raw = item.strip()
             answer = []
-            if '：' in answer_raw:
-                answer_raw = answer_raw.split('：')[1]
+            for separator in ['】', '：']:
+                if separator in answer_raw:
+                    answer_raw = answer_raw.split(separator)[1]
             if answer_raw in answer_convert_map:
                 answer.append(answer_convert_map[answer_raw])
             else:
@@ -111,11 +114,14 @@ def parse_maogai():
             for option in ti_raw[1:answer_idx]:
                 if answer_locator in option or difficulty_locator in option or not option:
                     continue
-                temp = option[1:].strip()
-                for it in ['、', '.', '．']:
-                    if temp.startswith(it):
-                        temp = temp.replace(it, '')
-                options.append(temp.strip())
+                temp_ops = option.strip().split(' ')
+                for item in temp_ops:
+                    if re.match(r'(A|B|C|D|E|F|G)', item):
+                        temp = item.strip()[1:]
+                        for it in ['、', '.', '．']:
+                            if temp.startswith(it):
+                                temp = temp.replace(it, '')
+                        options.append(temp.strip())
 
             # 解析类型
             ti_type = 0
@@ -134,7 +140,7 @@ def parse_maogai():
             })
 
         print(f'{file}: {len(ti_list)}题')
-        print(f'第一题解析结果：{ti_list[0]}')
+        print(f'{ti_list[0]}...')
 
         with open(doc_dir + file.replace('.txt', '.json'), 'w') as f:
             f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
