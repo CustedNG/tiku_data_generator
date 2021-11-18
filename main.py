@@ -58,7 +58,7 @@ def parse_maogai():
     difficulty_locator = '难易'
     answer_locator = '答案'
 
-    docx2txt(doc_dir)
+    # docx2txt(doc_dir)
     for file in os.listdir(doc_dir):
         if not file.endswith('.txt'):
             continue
@@ -69,6 +69,7 @@ def parse_maogai():
         lines = f.readlines()
         f.close()
         for i in range(len(lines)):
+            lines[i] = lines[i].replace(' ', ' ')
             # 根据题号分割题目
             if re.match(r'( )*[1-9]+.*', lines[i]):
                 raw_list.append(lines[idx:i])
@@ -101,10 +102,20 @@ def parse_maogai():
 
             # 解析选项
             options = []
-            for option in ti_raw[1:-2]:
+            answer_idx = -2
+            idx_num = 0
+            for li in ti_raw:
+                if answer_locator in li:
+                    answer_idx = idx_num
+                idx_num += 1
+            for option in ti_raw[1:answer_idx]:
                 if answer_locator in option or difficulty_locator in option or not option:
                     continue
-                options.append(option[2:].strip())
+                temp = option[1:].strip()
+                for it in ['、', '.', '．']:
+                    if temp.startswith(it):
+                        temp = temp.replace(it, '')
+                options.append(temp.strip())
 
             # 解析类型
             ti_type = 0
