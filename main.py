@@ -14,8 +14,10 @@ answer_convert_map = {
     'H': 7,
     '是': 0,
     '对': 0,
+    '正确': 0,
     '错': 1,
     '否': 1,
+    '错误': 1,
 }
 
 
@@ -53,68 +55,64 @@ def docx2txt(doc_dir):
 
 def parse_maogai():
     doc_dir = 'maogai/'
-    difficulty_locator = '【难易程度】'
-    answer_locator = '【正确答案】'
+    difficulty_locator = '难易'
+    answer_locator = '答案'
+
     docx2txt(doc_dir)
     for file in os.listdir(doc_dir):
         if not file.endswith('.txt'):
             continue
         # 题目列表，纯str
         raw_list = []
-        idxes = []
+        idx = 0
         f = open(doc_dir + '/' + file, 'r')
         lines = f.readlines()
         f.close()
         for i in range(len(lines)):
             # 根据题号分割题目
             if re.match(r'( )*[1-9]+.*', lines[i]):
-                idx_len = len(idxes)
-                if idx_len == 0 or idx_len == 1:
-                    idxes.append(i)
-                if len(idxes) == 2:
-                    idxes[0] = idxes[1]
-                    idxes[1] = i
-                    raw_list.append(lines[idxes[0]:idxes[1]])
+                raw_list.append(lines[idx:i])
+                idx = i
+        raw_list.append(lines[idx:])
+        raw_list = raw_list[1:]
 
         # 标准结构的题目列表
         ti_list = []
         for ti_raw in raw_list:
-            if len(ti_raw) == 0:
-                continue
             # 解析标题
-            title = ti_raw[0][2:].strip()
+            ti_head = re.match(r'( )*[1-9]+[0-9]*( )*(、|\.|．)*( )*', ti_raw[0])
+            title = ti_raw[0].replace(ti_head.group(), '').strip()
 
             # 解析答案
             answer_raw = ''
             for item in ti_raw:
                 if answer_locator in item:
-                    answer_raw = item.replace(answer_locator, '').strip()
-
+                    answer_raw = item.strip()
             answer = []
-            answer_len = len(answer_raw)
-            if answer_len == 1:
-                answer = [answer_convert_map[answer_raw]]
+            if '：' in answer_raw:
+                answer_raw = answer_raw.split('：')[1]
+            if answer_raw in answer_convert_map:
+                answer.append(answer_convert_map[answer_raw])
             else:
                 for item in answer_raw:
+                    if item not in answer_convert_map:
+                        continue
                     answer.append(answer_convert_map[item])
-
-            # 解析类型
-            ti_type = 0
-            if '对' in answer_raw or '错' in answer_raw or '是' in answer_raw or '否' in answer_raw:
-                ti_type = 3
-            elif answer_len > 1:
-                ti_type = 1
 
             # 解析选项
             options = []
-            print(ti_raw[1:-2])
-            if ti_type == 3:
+            for option in ti_raw[1:-2]:
+                if answer_locator in option or difficulty_locator in option or not option:
+                    continue
+                options.append(option[2:].strip())
+
+            # 解析类型
+            ti_type = 0
+            answer_len = len(answer)
+            if answer_len > 1:
+                ti_type = 1
+            if len(options) == 0 and answer_len == 1:
                 options = ['对', '错']
-            else:
-                for option in ti_raw[1:-2]:
-                    if answer_locator in option or difficulty_locator in option or not option:
-                        continue
-                    options.append(option[2:].strip())
 
             # 添加解析完成的题目到列表
             ti_list.append({
