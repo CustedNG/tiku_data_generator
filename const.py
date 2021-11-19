@@ -13,6 +13,7 @@ answer_convert_map = {
     '错': 1,
     '否': 1,
     '错误': 1,
+    'Ｂ': 1
 }
 
 convert_result_dir = 'convert/'

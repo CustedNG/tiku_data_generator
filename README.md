@@ -1,5 +1,5 @@
 # 题库数据生成器
-主要将doc文档中的题目，提取并生成json格式的题库数据。
+主要将.docx/.xls/.txt文档中的题目，提取并生成json格式的题库数据。
 
 
 ## JSON结构规范
@@ -56,7 +56,9 @@ content.content.data | 题目数据文件名
     "bbb",
   ],
   "question": "下面哪一位是共和国十大将军之一(　　)",
-  "answer": 0,
+  "answer": [
+      0
+  ],
   "type": 0
 }
 ```
