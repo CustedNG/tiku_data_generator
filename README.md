@@ -11,6 +11,7 @@
         {
             "id": "maogai",
             "length": 18,
+            "chinese": "毛概",
             "content": [
                 {
                     "title": "第一章 毛泽东思想及其历史地位",
@@ -32,6 +33,7 @@ content | 题库索引内容，每个题库一个索引
 ---- | ----
 content.id | 题库id
 content.length | 题目总数
+content.chinese | 题库中文名
 content.content | 题目列表
 ---- | ----
 content.content.title | 题库标题 

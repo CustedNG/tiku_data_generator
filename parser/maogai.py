@@ -80,7 +80,7 @@ def parse(doc_dir: str):
 
             # 添加解析完成的题目到列表
             ti_list.append({
-                'title': title,
+                'question': title,
                 'options': options,
                 'answer': answer,
                 'type': ti_type

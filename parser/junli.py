@@ -6,9 +6,13 @@ import json
 
 def parse(dir):
     skip_files: List[str] = []
+    ti_count = 0
     for file in os.listdir(dir):
-        if not file.endswith('.xls') and not file.endswith('.json'):
-            skip_files.append(file)
+        if not file.endswith('.xls'):
+            if not file.endswith('.json'):
+                skip_files.append(file)
+            continue
+
         ti_list: dict = []
         data = xlrd.open_workbook(dir + file)
         table = data.sheets()[0]
@@ -46,8 +50,11 @@ def parse(dir):
         else:
             print('Unknown file type: ' + file)
         
+        ti_count += len(ti_list)
         with open(dir + file.replace('.xls', '.json'), 'w') as f:
             f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
+    
+    print(f'{dir}：共解析了{ti_count}道题')
         
         
     if len(skip_files) > 0:
