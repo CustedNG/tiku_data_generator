@@ -1,2 +1,2 @@
-def parse_not_implement():
+def parse(_):
     raise NotImplementedError()

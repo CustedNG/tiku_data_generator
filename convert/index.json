@@ -1,0 +1,274 @@
+{
+    "version": "2021-11-19 23:50:17",
+    "content": [
+        {
+            "id": "maogai",
+            "chinese": "毛概",
+            "length": 18,
+            "content": [
+                {
+                    "title": "第十章 第三节 推动社会主义文化繁荣兴盛",
+                    "radio": 43,
+                    "multiple": 19,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "10.3.json"
+                },
+                {
+                    "title": "6",
+                    "radio": 43,
+                    "multiple": 18,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "6.json"
+                },
+                {
+                    "title": "7",
+                    "radio": 46,
+                    "multiple": 18,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "7.json"
+                },
+                {
+                    "title": "第十章 第二节 发展社会主义民主政治",
+                    "radio": 42,
+                    "multiple": 18,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "10.2.json"
+                },
+                {
+                    "title": "10",
+                    "radio": 46,
+                    "multiple": 14,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "10.5.json"
+                },
+                {
+                    "title": "第一章   毛泽东思想及其历史地位",
+                    "radio": 42,
+                    "multiple": 18,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "1.json"
+                },
+                {
+                    "title": "第十章 第四节 坚持在发展中保障和改善民生",
+                    "radio": 42,
+                    "multiple": 18,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "10.4.json"
+                },
+                {
+                    "title": "第十一章  第三节 全面依法治国",
+                    "radio": 22,
+                    "multiple": 6,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "11.3.json"
+                },
+                {
+                    "title": "第二章  新民主主义革命理论",
+                    "radio": 43,
+                    "multiple": 18,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "2.json"
+                },
+                {
+                    "title": "12",
+                    "radio": 35,
+                    "multiple": 28,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "12.json"
+                },
+                {
+                    "title": "第十三章 中国特色大国外交",
+                    "radio": 46,
+                    "multiple": 24,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "13.json"
+                },
+                {
+                    "title": "第三章 社会主义改造理论",
+                    "radio": 41,
+                    "multiple": 16,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "3.json"
+                },
+                {
+                    "title": "第八章 习近平新时代中国特色社会主义思想及其历史地位",
+                    "radio": 47,
+                    "multiple": 22,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "8.json"
+                },
+                {
+                    "title": "第四章 社会主义建设道路初步探索的理论成果",
+                    "radio": 55,
+                    "multiple": 22,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "4.json"
+                },
+                {
+                    "title": "10",
+                    "radio": 45,
+                    "multiple": 19,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "10.1.json"
+                },
+                {
+                    "title": "第十四章  坚持和加强党的领导",
+                    "radio": 49,
+                    "multiple": 21,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "14.json"
+                },
+                {
+                    "title": "第五章 邓小平理论",
+                    "radio": 41,
+                    "multiple": 18,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "5.json"
+                },
+                {
+                    "title": "第九章 坚持和发展中国特色社会主义的总任务",
+                    "radio": 48,
+                    "multiple": 21,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "9.json"
+                }
+            ]
+        },
+        {
+            "id": "junli",
+            "chinese": "军理",
+            "length": 3,
+            "content": [
+                {
+                    "title": "判断题",
+                    "radio": 0,
+                    "multiple": 0,
+                    "decide": 289,
+                    "fill": 0,
+                    "data": "judge.json"
+                },
+                {
+                    "title": "多选题",
+                    "radio": 163,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "multi.json"
+                },
+                {
+                    "title": "判断题",
+                    "radio": 378,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "single.json"
+                }
+            ]
+        },
+        {
+            "id": "jinxiandaishi",
+            "chinese": "近代史",
+            "length": 10,
+            "content": [
+                {
+                    "title": "6",
+                    "radio": 76,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "6.json"
+                },
+                {
+                    "title": "7",
+                    "radio": 0,
+                    "multiple": 47,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "7.json"
+                },
+                {
+                    "title": "10",
+                    "radio": 60,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "10.json"
+                },
+                {
+                    "title": "1",
+                    "radio": 0,
+                    "multiple": 34,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "1.json"
+                },
+                {
+                    "title": "2",
+                    "radio": 101,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "2.json"
+                },
+                {
+                    "title": "3",
+                    "radio": 81,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "3.json"
+                },
+                {
+                    "title": "8",
+                    "radio": 0,
+                    "multiple": 37,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "8.json"
+                },
+                {
+                    "title": "4",
+                    "radio": 87,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "4.json"
+                },
+                {
+                    "title": "5",
+                    "radio": 0,
+                    "multiple": 30,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "5.json"
+                },
+                {
+                    "title": "9",
+                    "radio": 74,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "9.json"
+                }
+            ]
+        }
+    ]
+}
