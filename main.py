@@ -1,11 +1,8 @@
-from typing import List
-
-import json
-import re
 import os
-import docx
+import time
 
 from parser import maogai, not_implement
+import const
 
 
 subject_map = {
@@ -20,9 +17,14 @@ subject_map = {
 }
 
 if __name__ == '__main__':
+    index_dict = {
+        'version': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ,
+        'content': []
+    }
     subjects = subject_map.keys()
     for subject in subjects:
-        if os.path.exists(subject):
+        path = const.convert_result_dir + subject + '/'
+        if os.path.exists(path):
             info = subject_map[subject]
-            print(f'开始解析{info["name"]}')
-            info['func']()
+            info['func'](path)
+            print('\n')

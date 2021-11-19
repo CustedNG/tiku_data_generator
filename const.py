@@ -14,3 +14,5 @@ answer_convert_map = {
     '否': 1,
     '错误': 1,
 }
+
+convert_result_dir = 'convert/'

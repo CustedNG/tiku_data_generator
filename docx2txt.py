@@ -23,7 +23,6 @@ def convert_dir(doc_dir):
             f.write('\n')
             f.write(para.text)
         f.close()
-        print('转换完成：' + i)
 
     if len(skip_files) > 0:
         raise Exception('\n以下文件由于格式问题，没有转换：\n' + str(skip_files))

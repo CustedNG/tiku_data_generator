@@ -6,11 +6,11 @@ import const
 import json
 
 
-def parse():
-    doc_dir = 'maogai/'
+def parse(doc_dir: str):
     answer_locator = '答案'
 
     docx2txt.convert_dir(doc_dir)
+    all_ti_count = 0
     for file in os.listdir(doc_dir):
         if not file.endswith('.txt'):
             continue
@@ -86,8 +86,9 @@ def parse():
                 'type': ti_type
             })
 
-        print(f'{file}: {len(ti_list)}题')
-        print(f'{ti_list[0]}...')
+        all_ti_count += len(ti_list)
 
         with open(doc_dir + file.replace('.txt', '.json'), 'w') as f:
             f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
+    
+    print(f'{doc_dir}: 共解析了{all_ti_count}道题')
