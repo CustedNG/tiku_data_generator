@@ -1,4 +1,4 @@
-from typing import Any
+from typing import List
 
 import json
 import re
@@ -65,7 +65,7 @@ def parse_maogai():
         if not file.endswith('.txt'):
             continue
         # 题目列表，纯str
-        raw_list: [str] = []
+        raw_list: List[str] = []
         idx = 0
         f = open(doc_dir + '/' + file, 'r')
         lines = f.readlines()
