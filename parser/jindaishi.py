@@ -31,7 +31,7 @@ def parse(dir):
                     'type': 0 if is_single else 1
                 })
         if file.split('-')[0] in all_ti_dict.keys():
-            all_ti_dict[file.split('-')[0]] + ti_list
+            all_ti_dict[file.split('-')[0]] += ti_list
         else:
             all_ti_dict[file.split('-')[0]] = ti_list
         ti_count += len(ti_list)

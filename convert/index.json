@@ -1,5 +1,5 @@
 {
-    "version": "2021-11-20 11:45:07",
+    "version": "2021-11-20 11:46:50",
     "content": [
         {
             "id": "maogai",
@@ -190,7 +190,7 @@
             "content": [
                 {
                     "title": "第一章",
-                    "radio": 0,
+                    "radio": 61,
                     "multiple": 34,
                     "decide": 0,
                     "fill": 0,
@@ -199,7 +199,7 @@
                 {
                     "title": "第二章",
                     "radio": 101,
-                    "multiple": 0,
+                    "multiple": 23,
                     "decide": 0,
                     "fill": 0,
                     "data": "2.json"
@@ -207,7 +207,7 @@
                 {
                     "title": "第三章",
                     "radio": 81,
-                    "multiple": 0,
+                    "multiple": 24,
                     "decide": 0,
                     "fill": 0,
                     "data": "3.json"
@@ -215,14 +215,14 @@
                 {
                     "title": "第四章",
                     "radio": 87,
-                    "multiple": 0,
+                    "multiple": 49,
                     "decide": 0,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
                     "title": "第五章",
-                    "radio": 0,
+                    "radio": 65,
                     "multiple": 30,
                     "decide": 0,
                     "fill": 0,
@@ -231,14 +231,14 @@
                 {
                     "title": "第六章",
                     "radio": 76,
-                    "multiple": 0,
+                    "multiple": 35,
                     "decide": 0,
                     "fill": 0,
                     "data": "6.json"
                 },
                 {
                     "title": "第七章",
-                    "radio": 0,
+                    "radio": 52,
                     "multiple": 47,
                     "decide": 0,
                     "fill": 0,
@@ -246,7 +246,7 @@
                 },
                 {
                     "title": "第八章",
-                    "radio": 0,
+                    "radio": 104,
                     "multiple": 37,
                     "decide": 0,
                     "fill": 0,
@@ -255,7 +255,7 @@
                 {
                     "title": "第九章",
                     "radio": 74,
-                    "multiple": 0,
+                    "multiple": 37,
                     "decide": 0,
                     "fill": 0,
                     "data": "9.json"
@@ -263,7 +263,7 @@
                 {
                     "title": "第十章",
                     "radio": 60,
-                    "multiple": 0,
+                    "multiple": 35,
                     "decide": 0,
                     "fill": 0,
                     "data": "10.json"
