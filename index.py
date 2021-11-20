@@ -16,8 +16,10 @@ def update_index(file_name: str, title: str, file_path: str):
 
 
 def generate(enabled_subjects: dict):
+    time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    print(f'\n{time_now}: 开始生成索引\n')
     index_dict = {
-        'version': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) ,
+        'version': time_now,
         'content': []
     }
     for subject in enabled_subjects.keys():
@@ -44,7 +46,8 @@ def generate(enabled_subjects: dict):
                 decide = 0
                 fill = 0
 
-                with open(subject_path + file, 'r', encoding='utf-8') as f:
+                unit_path = subject_path + file
+                with open(unit_path, 'r', encoding='utf-8') as f:
                     unit_ti = json.load(f)
 
                     for ti in unit_ti:
@@ -57,8 +60,11 @@ def generate(enabled_subjects: dict):
                         elif ti['type'] == 3:
                             decide += 1
 
+                    have_title = file in unit_title_map.keys()
+                    if not have_title:
+                        print(f"{unit_path}：没有索引标题")
                     content.append({
-                        'title': unit_title_map[file] if file in unit_title_map.keys() else file.split('.')[0],
+                        'title': unit_title_map[file] if have_title else file.split('.')[0],
                         'radio': radio,
                         'multiple': multiple,
                         'decide': decide,
@@ -79,4 +85,4 @@ def generate(enabled_subjects: dict):
             json.dump(index_dict, f, ensure_ascii=False, indent=4)
         
     
-    print(f"\n{const.convert_result_dir + 'index.json'}: 已生成 {len(index_dict['content'])} 条索引")
+    print(f"\n{const.convert_result_dir + 'index.json'}: 已生成 {len(index_dict['content'])} 科的索引")

@@ -26,13 +26,14 @@ def parse(doc_dir: str):
                 raw_list.append(lines[idx:i])
                 idx = i
         raw_list.append(lines[idx:])
+
         # 取出标题，放入文件--标题Map
-        print(raw_list[0])
         for head in raw_list[0]:
             head = head.strip()
             result = re.search('第[\u4e00-\u9fa5]+章[ ]*[第]*[\u4e00-\u9fa5]*[节]*[ ]*[\u4e00-\u9fa5]+', head)
             if result:
                 index.update_index(file.replace('.txt', '.json'), result.group(), doc_dir + 'index.json')
+        
         # 去除标题
         raw_list = raw_list[1:]
 
