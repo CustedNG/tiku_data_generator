@@ -1,10 +1,10 @@
 import time
-from typing import List
 import const
 import os
 import json
 
 index_path = const.convert_result_dir + 'index.json'
+
 
 def update_index(file_name: str, title: str, file_path: str):
     data = {}
@@ -45,7 +45,7 @@ def generate(enabled_subjects: dict):
             if file.endswith('.json'):
                 if file == 'index.json':
                     continue
-                
+
                 subject_length += 1
 
                 radio = 0
@@ -84,7 +84,6 @@ def generate(enabled_subjects: dict):
         for c in content:
             c.pop('index')
 
-
         subject_dict = {
             'id': subject,
             'chinese': enabled_subjects[subject],
@@ -105,6 +104,5 @@ def generate(enabled_subjects: dict):
 
         with open(index_path, 'w', encoding='utf-8') as f:
             json.dump(index_dict, f, ensure_ascii=False, indent=4)
-        
-    
+
     print(f"\n{index_path}: 已生成 {len(index_dict['content'])} 科的索引")

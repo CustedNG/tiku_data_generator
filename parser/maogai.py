@@ -1,11 +1,14 @@
 from typing import List
 import os
 import re
-import const, index, docx2txt
+import const
+import index
+import docx2txt
 import json
 
 
 answer_locator = '答案'
+
 
 def parse(doc_dir: str):
     docx2txt.convert_dir(doc_dir)
@@ -33,10 +36,9 @@ def parse(doc_dir: str):
             result = re.search('第[\u4e00-\u9fa5]+章[ ]*[第]*[\u4e00-\u9fa5]*[节]*[ ]*[\u4e00-\u9fa5]+', head)
             if result:
                 index.update_index(file.replace('.txt', '.json'), result.group(), doc_dir + 'index.json')
-        
+
         # 去除标题
         raw_list = raw_list[1:]
-
 
         # 标准结构的题目列表
         ti_list = []
@@ -99,6 +101,5 @@ def parse(doc_dir: str):
 
         with open(doc_dir + file.replace('.txt', '.json'), 'w') as f:
             f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
-    
+
     print(f'{doc_dir}: 共解析了{all_ti_count}道题')
-    
