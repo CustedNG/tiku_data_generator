@@ -69,8 +69,14 @@ def generate(enabled_subjects: dict):
                         'multiple': multiple,
                         'decide': decide,
                         'fill': fill,
-                        'data': file
+                        'data': file,
+                        'index': float(file.replace('.json', ''))
                     })
+        # 单元排序
+        content.sort(key=lambda x: x['index'])
+        for c in content:
+            c.pop('index')
+
 
         subject_dict = {
             'id': subject,
