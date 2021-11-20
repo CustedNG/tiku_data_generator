@@ -4,6 +4,7 @@ import const
 import os
 import json
 
+index_path = const.convert_result_dir + 'index.json'
 
 def update_index(file_name: str, title: str, file_path: str):
     data = {}
@@ -18,10 +19,16 @@ def update_index(file_name: str, title: str, file_path: str):
 def generate(enabled_subjects: dict):
     time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     print(f'\n{time_now}: 开始生成索引\n')
-    index_dict = {
-        'version': time_now,
-        'content': []
-    }
+
+    index_dict = {}
+
+    if os.path.exists(index_path):
+        with open(index_path) as f:
+            raw = f.read()
+            index_dict = json.loads(raw if raw else '{}')
+
+    index_dict['version'] = time_now
+
     for subject in enabled_subjects.keys():
         subject_path = const.convert_result_dir + subject + '/'
         subject_files = os.listdir(subject_path)
@@ -85,10 +92,19 @@ def generate(enabled_subjects: dict):
             'content': content
         }
 
-        index_dict['content'].append(subject_dict)
+        subject_index = -1
+        for c in index_dict['content']:
+            subject_index += 1
+            if c['id'] == subject:
+                break
 
-        with open(const.convert_result_dir + 'index.json', 'w', encoding='utf-8') as f:
+        if subject_index == -1:
+            index_dict['content'].append(subject_dict)
+        else:
+            index_dict['content'][subject_index] = subject_dict
+
+        with open(index_path, 'w', encoding='utf-8') as f:
             json.dump(index_dict, f, ensure_ascii=False, indent=4)
         
     
-    print(f"\n{const.convert_result_dir + 'index.json'}: 已生成 {len(index_dict['content'])} 科的索引")
+    print(f"\n{index_path}: 已生成 {len(index_dict['content'])} 科的索引")
