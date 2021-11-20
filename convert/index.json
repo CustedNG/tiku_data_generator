@@ -1,5 +1,5 @@
 {
-    "version": "2021-11-20 11:46:50",
+    "version": "2021-11-20 11:48:33",
     "content": [
         {
             "id": "maogai",
@@ -159,7 +159,7 @@
             "content": [
                 {
                     "title": "单选题",
-                    "radio": 0,
+                    "radio": 378,
                     "multiple": 0,
                     "decide": 0,
                     "fill": 0,
@@ -167,7 +167,7 @@
                 },
                 {
                     "title": "多选题",
-                    "radio": 0,
+                    "radio": 163,
                     "multiple": 0,
                     "decide": 0,
                     "fill": 0,
@@ -177,7 +177,7 @@
                     "title": "判断题",
                     "radio": 0,
                     "multiple": 0,
-                    "decide": 0,
+                    "decide": 289,
                     "fill": 0,
                     "data": "3.json"
                 }

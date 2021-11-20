@@ -16,7 +16,7 @@ def parse(dir):
         ti_list: dict = []
         data = xlrd.open_workbook(dir + file)
         table = data.sheets()[0]
-        if 'judge' in file:
+        if '3' in file:
             for i in range(2, table.nrows):
                 if table.row_values(i)[0]:
                     ti_list.append({
@@ -25,7 +25,7 @@ def parse(dir):
                         'answer': 0 if table.cell(i, 2).value == '对' else 1,
                         'type': 3
                     })
-        elif 'single' in file:
+        elif '1' in file:
             for i in range(2, table.nrows):
                 if table.row_values(i)[0]:
                     ti_list.append({
@@ -34,7 +34,7 @@ def parse(dir):
                         'answer': [const.answer_convert_map[table.cell(i, 6).value.strip()]],
                         'type': 0
                     })
-        elif 'multi' in file:
+        elif '2' in file:
             for i in range(2, table.nrows):
                 if table.row_values(i)[0]:
                     answers = []
