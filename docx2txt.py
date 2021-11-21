@@ -2,8 +2,11 @@ import os
 import docx
 
 
-# [doc_dir]: 'xxx/'
 def convert_dir(doc_dir):
+    '''
+    param doc_dir: 文档目录, 如'xxx/'
+    return: None
+    '''
     skip_files = []
     for i in os.listdir(doc_dir):
         if not i.endswith('.docx'):

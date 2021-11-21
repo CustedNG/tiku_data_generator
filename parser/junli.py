@@ -4,7 +4,12 @@ import os
 import const
 import json
 
+
 def parse(dir):
+    '''
+    param dir: 文件目录
+    return: None
+    '''
     skip_files: List[str] = []
     ti_count = 0
     for file in os.listdir(dir):
@@ -49,13 +54,12 @@ def parse(dir):
                     })
         else:
             print('Unknown file type: ' + file)
-        
+
         ti_count += len(ti_list)
         with open(dir + file.replace('.xls', '.json'), 'w') as f:
             f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
-    
+
     print(f'{dir}：共解析了{ti_count}道题')
-        
-        
+
     if len(skip_files) > 0:
         raise Exception('skip files:', skip_files)

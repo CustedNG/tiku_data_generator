@@ -4,7 +4,12 @@ import os
 import const
 import json
 
+
 def parse(dir):
+    '''
+    param dir: 文件目录
+    return: None
+    '''
     skip_files: List[str] = []
     all_ti_dict: dict[str, dict] = {}
     ti_count = 0
@@ -13,7 +18,7 @@ def parse(dir):
             if not file.endswith('.json'):
                 skip_files.append(file)
             continue
-        
+
         ti_list: List[dict] = []
         is_single = file.endswith('single.xls')
         data = xlrd.open_workbook(dir + file)
@@ -35,12 +40,11 @@ def parse(dir):
         else:
             all_ti_dict[file.split('-')[0]] = ti_list
         ti_count += len(ti_list)
-    
+
     for unit_idx in all_ti_dict:
         with open(dir + unit_idx + '.json', 'w') as f:
             f.write(json.dumps(all_ti_dict[unit_idx], ensure_ascii=False, indent=4))
     print(f'{dir}：共解析了{ti_count}道题')
-        
-        
+
     if len(skip_files) > 0:
         raise Exception('skip files:', skip_files)

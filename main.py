@@ -2,7 +2,8 @@ import os
 import time
 
 from parser import maogai, junli, jindaishi, not_implement
-import const, index
+import const
+import index
 
 
 subject_map = {
@@ -17,12 +18,12 @@ subject_map = {
 
 if __name__ == '__main__':
     start_time = time.time()
-    
+
     subjects = subject_map.keys()
     enabled_subjects: dict = {}
     for subject in subjects:
         path = const.convert_result_dir + subject + '/'
-        
+
         if os.path.exists(path):
             info = subject_map[subject]
             # 执行每个科目的解析
@@ -33,6 +34,6 @@ if __name__ == '__main__':
 
     # 生成题库索引
     index.generate(enabled_subjects)
-    
+
     end_time = time.time()
-    print(f"\n耗时：{end_time - start_time} 秒")
+    print(f"\n生成数据耗时：{end_time - start_time} 秒")

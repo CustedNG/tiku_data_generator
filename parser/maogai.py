@@ -11,6 +11,10 @@ answer_locator = '答案'
 
 
 def parse(doc_dir: str):
+    '''
+    param doc_dir: 文档目录
+    return: None
+    '''
     docx2txt.convert_dir(doc_dir)
     all_ti_count = 0
     for file in os.listdir(doc_dir):

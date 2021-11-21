@@ -7,6 +7,12 @@ index_path = const.convert_result_dir + 'index.json'
 
 
 def update_index(file_name: str, title: str, file_path: str):
+    '''
+    param file_name: 文件名
+    param title: 标题
+    param file_path: 文件路径
+    return: None
+    '''
     data = {}
     with open(file_path) as f:
         raw = f.read()
@@ -17,6 +23,10 @@ def update_index(file_name: str, title: str, file_path: str):
 
 
 def generate(enabled_subjects: dict):
+    '''
+    param enabled_subjects: 启用的科目, 如：{'maogai': '毛概'}
+    return: None
+    '''
     time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     print(f'\n{time_now}: 开始生成索引\n')
 
