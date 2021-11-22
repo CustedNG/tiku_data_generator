@@ -14,6 +14,9 @@ def update_index(file_name: str, title: str, file_path: str):
     return: None
     '''
     data = {}
+    if not os.path.exists(file_path):
+        with open(file_path, 'w') as f:
+            f.write('{}')
     with open(file_path) as f:
         raw = f.read()
         data = json.loads(raw if raw else '{}')
