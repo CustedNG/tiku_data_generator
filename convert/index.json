@@ -1,5 +1,5 @@
 {
-    "version": "2021-11-23 23:13:31",
+    "version": "2021-11-24 13:19:48",
     "content": [
         {
             "id": "maogai",
@@ -320,6 +320,7 @@
         },
         {
             "id": "sixiu",
+            "chinese": "思修",
             "length": 6,
             "content": [
                 {
@@ -370,8 +371,7 @@
                     "fill": 0,
                     "data": "6.json"
                 }
-            ],
-            "chinese": "思修"
+            ]
         },
         {
             "id": "junli1",
@@ -445,6 +445,7 @@
         },
         {
             "id": "clang1",
+            "chinese": "C语言上",
             "length": 10,
             "content": [
                 {
@@ -527,8 +528,94 @@
                     "fill": 20,
                     "data": "10.json"
                 }
-            ],
-            "chinese": "C语言上"
+            ]
+        },
+        {
+            "id": "clang2",
+            "chinese": "C语言下",
+            "length": 10,
+            "content": [
+                {
+                    "title": "第十一章 数组",
+                    "radio": 30,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 20,
+                    "data": "1.json"
+                },
+                {
+                    "title": "第十二章 指针",
+                    "radio": 30,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 20,
+                    "data": "2.json"
+                },
+                {
+                    "title": "第十三章 结构体",
+                    "radio": 20,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 10,
+                    "data": "3.json"
+                },
+                {
+                    "title": "第十四章 文件",
+                    "radio": 20,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 10,
+                    "data": "4.json"
+                },
+                {
+                    "title": "第十五章  基本概念和算法",
+                    "radio": 20,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 10,
+                    "data": "5.json"
+                },
+                {
+                    "title": "第十六章 线性表",
+                    "radio": 20,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 10,
+                    "data": "6.json"
+                },
+                {
+                    "title": "第十七章 栈与队列",
+                    "radio": 20,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 10,
+                    "data": "7.json"
+                },
+                {
+                    "title": "第十八章 树与二叉树",
+                    "radio": 20,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 15,
+                    "data": "8.json"
+                },
+                {
+                    "title": "第十九章 图",
+                    "radio": 20,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 10,
+                    "data": "9.json"
+                },
+                {
+                    "title": "第二十章 查找与排序",
+                    "radio": 30,
+                    "multiple": 0,
+                    "decide": 0,
+                    "fill": 10,
+                    "data": "10.json"
+                }
+            ]
         },
         {
             "id": "junli",
