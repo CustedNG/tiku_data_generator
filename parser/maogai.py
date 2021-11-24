@@ -92,6 +92,7 @@ def parse(doc_dir: str):
                 ti_type = 1
             if len(options) == 0 and answer_len == 1:
                 options = ['对', '错']
+                ti_type = 3
 
             # 添加解析完成的题目到列表
             ti_list.append({

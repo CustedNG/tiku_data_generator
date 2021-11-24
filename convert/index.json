@@ -1,5 +1,5 @@
 {
-    "version": "2021-11-22 10:55:57",
+    "version": "2021-11-23 23:13:31",
     "content": [
         {
             "id": "maogai",
@@ -8,145 +8,145 @@
             "content": [
                 {
                     "title": "第一章   毛泽东思想及其历史地位",
-                    "radio": 42,
+                    "radio": 30,
                     "multiple": 18,
-                    "decide": 0,
+                    "decide": 12,
                     "fill": 0,
                     "data": "1.json"
                 },
                 {
                     "title": "第二章  新民主主义革命理论",
-                    "radio": 43,
+                    "radio": 29,
                     "multiple": 18,
-                    "decide": 0,
+                    "decide": 14,
                     "fill": 0,
                     "data": "2.json"
                 },
                 {
                     "title": "第三章 社会主义改造理论",
-                    "radio": 41,
+                    "radio": 25,
                     "multiple": 16,
-                    "decide": 0,
+                    "decide": 16,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
                     "title": "第四章 社会主义建设道路初步探索的理论成果",
-                    "radio": 55,
+                    "radio": 31,
                     "multiple": 22,
-                    "decide": 0,
+                    "decide": 24,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
                     "title": "第五章 邓小平理论",
-                    "radio": 41,
+                    "radio": 30,
                     "multiple": 18,
-                    "decide": 0,
+                    "decide": 11,
                     "fill": 0,
                     "data": "5.json"
                 },
                 {
                     "title": "第六章 “三个代表”重要思想",
-                    "radio": 43,
+                    "radio": 30,
                     "multiple": 18,
-                    "decide": 0,
+                    "decide": 13,
                     "fill": 0,
                     "data": "6.json"
                 },
                 {
                     "title": "第七章 科学发展观",
-                    "radio": 46,
+                    "radio": 34,
                     "multiple": 18,
-                    "decide": 0,
+                    "decide": 12,
                     "fill": 0,
                     "data": "7.json"
                 },
                 {
                     "title": "第八章 习近平新时代中国特色社会主义思想及其历史地位",
-                    "radio": 47,
+                    "radio": 32,
                     "multiple": 22,
-                    "decide": 0,
+                    "decide": 15,
                     "fill": 0,
                     "data": "8.json"
                 },
                 {
                     "title": "第九章 坚持和发展中国特色社会主义的总任务",
-                    "radio": 48,
+                    "radio": 34,
                     "multiple": 21,
-                    "decide": 0,
+                    "decide": 14,
                     "fill": 0,
                     "data": "9.json"
                 },
                 {
                     "title": "第十章 第一节 坚持开放发展",
-                    "radio": 45,
+                    "radio": 31,
                     "multiple": 19,
-                    "decide": 0,
+                    "decide": 14,
                     "fill": 0,
                     "data": "10.1.json"
                 },
                 {
                     "title": "第十章 第二节 发展社会主义民主政治",
-                    "radio": 42,
+                    "radio": 29,
                     "multiple": 18,
-                    "decide": 0,
+                    "decide": 13,
                     "fill": 0,
                     "data": "10.2.json"
                 },
                 {
                     "title": "第十章 第三节 推动社会主义文化繁荣兴盛",
-                    "radio": 43,
+                    "radio": 30,
                     "multiple": 19,
-                    "decide": 0,
+                    "decide": 13,
                     "fill": 0,
                     "data": "10.3.json"
                 },
                 {
                     "title": "第十章 第四节 坚持在发展中保障和改善民生",
-                    "radio": 42,
+                    "radio": 30,
                     "multiple": 18,
-                    "decide": 0,
+                    "decide": 12,
                     "fill": 0,
                     "data": "10.4.json"
                 },
                 {
                     "title": "第十章 第五节 建设生态文明",
-                    "radio": 46,
+                    "radio": 31,
                     "multiple": 14,
-                    "decide": 0,
+                    "decide": 15,
                     "fill": 0,
                     "data": "10.5.json"
                 },
                 {
                     "title": "第十一章  第三节 全面依法治国",
-                    "radio": 22,
+                    "radio": 11,
                     "multiple": 6,
-                    "decide": 0,
+                    "decide": 11,
                     "fill": 0,
                     "data": "11.3.json"
                 },
                 {
                     "title": "第十二章 全面推进国防和军队现代化",
-                    "radio": 35,
+                    "radio": 20,
                     "multiple": 28,
-                    "decide": 0,
+                    "decide": 15,
                     "fill": 0,
                     "data": "12.json"
                 },
                 {
                     "title": "第十三章 中国特色大国外交",
-                    "radio": 46,
+                    "radio": 31,
                     "multiple": 24,
-                    "decide": 0,
+                    "decide": 15,
                     "fill": 0,
                     "data": "13.json"
                 },
                 {
                     "title": "第十四章  坚持和加强党的领导",
-                    "radio": 49,
+                    "radio": 36,
                     "multiple": 21,
-                    "decide": 0,
+                    "decide": 13,
                     "fill": 0,
                     "data": "14.json"
                 }
@@ -159,73 +159,73 @@
             "content": [
                 {
                     "title": "导论",
-                    "radio": 54,
+                    "radio": 32,
                     "multiple": 27,
-                    "decide": 0,
+                    "decide": 22,
                     "fill": 0,
                     "data": "0.json"
                 },
                 {
                     "title": "第一章 世界的物质性及发展规律",
-                    "radio": 392,
+                    "radio": 218,
                     "multiple": 113,
-                    "decide": 0,
+                    "decide": 174,
                     "fill": 0,
                     "data": "1.json"
                 },
                 {
                     "title": "第二章 实践与认识及其发展规律",
-                    "radio": 125,
+                    "radio": 87,
                     "multiple": 76,
-                    "decide": 0,
+                    "decide": 38,
                     "fill": 0,
                     "data": "2.json"
                 },
                 {
                     "title": "第三章   人类社会及其发展规律",
-                    "radio": 96,
+                    "radio": 66,
                     "multiple": 30,
-                    "decide": 0,
+                    "decide": 30,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
                     "title": "第四章 资本主义的本质及规律",
-                    "radio": 246,
+                    "radio": 126,
                     "multiple": 79,
-                    "decide": 0,
+                    "decide": 120,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
                     "title": "第五章  资本主义的发展及其趋势",
-                    "radio": 188,
+                    "radio": 66,
                     "multiple": 32,
-                    "decide": 0,
+                    "decide": 122,
                     "fill": 0,
                     "data": "5.json"
                 },
                 {
                     "title": "第六章   社会主义社会及其发展",
-                    "radio": 135,
+                    "radio": 41,
                     "multiple": 34,
-                    "decide": 0,
+                    "decide": 94,
                     "fill": 0,
                     "data": "6.json"
                 },
                 {
                     "title": "第七章 共产主义是人类最崇高的社会理想",
-                    "radio": 65,
+                    "radio": 21,
                     "multiple": 25,
-                    "decide": 0,
+                    "decide": 44,
                     "fill": 0,
                     "data": "7.json"
                 },
                 {
                     "title": "马克思主义宗教观专题",
-                    "radio": 10,
+                    "radio": 5,
                     "multiple": 4,
-                    "decide": 0,
+                    "decide": 5,
                     "fill": 0,
                     "data": "8.json"
                 }
