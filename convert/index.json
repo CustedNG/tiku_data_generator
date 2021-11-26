@@ -1,5 +1,5 @@
 {
-    "version": "2021-11-24 13:19:48",
+    "version": "2021-11-26 13:47:12",
     "content": [
         {
             "id": "maogai",
@@ -16,9 +16,9 @@
                 },
                 {
                     "title": "第二章  新民主主义革命理论",
-                    "radio": 29,
+                    "radio": 30,
                     "multiple": 18,
-                    "decide": 14,
+                    "decide": 13,
                     "fill": 0,
                     "data": "2.json"
                 },
