@@ -110,6 +110,9 @@ def generate(enabled_subjects: dict):
             if c['id'] == subject:
                 break
 
+        if subject_index == len(index_dict['content']) - 1 and subject != index_dict['content'][-1]['id']:
+            subject_index = -1
+
         if subject_index == -1:
             index_dict['content'].append(subject_dict)
         else:
@@ -118,4 +121,4 @@ def generate(enabled_subjects: dict):
         with open(index_path, 'w', encoding='utf-8') as f:
             json.dump(index_dict, f, ensure_ascii=False, indent=4)
 
-    print(f"\n{index_path}: 已生成 {len(index_dict['content'])} 科的索引")
+    print(f"\n{index_path}: 现有 {len(index_dict['content'])} 科的索引，更新 {len(enabled_subjects)} 科索引。")

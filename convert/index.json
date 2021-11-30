@@ -1,5 +1,5 @@
 {
-    "version": "2021-11-29 11:35:03",
+    "version": "2021-11-30 18:35:35",
     "content": [
         {
             "id": "maogai",
@@ -645,6 +645,21 @@
                     "decide": 289,
                     "fill": 0,
                     "data": "3.json"
+                }
+            ]
+        },
+        {
+            "id": "feedback",
+            "chinese": "反馈",
+            "length": 1,
+            "content": [
+                {
+                    "title": "打开看看",
+                    "radio": 3,
+                    "multiple": 3,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "1.json"
                 }
             ]
         }
