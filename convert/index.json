@@ -1,5 +1,5 @@
 {
-    "version": "2021-11-30 18:35:35",
+    "version": "2021-11-30 22:38:29",
     "content": [
         {
             "id": "maogai",
@@ -372,76 +372,6 @@
                     "data": "6.json"
                 }
             ]
-        },
-        {
-            "id": "junli1",
-            "length": 5,
-            "content": [
-                {
-                    "title": "第一章 国防动员",
-                    "radio": 50,
-                    "multiple": 32,
-                    "decide": 44,
-                    "fill": 0,
-                    "data": "1.json"
-                },
-                {
-                    "title": "第二章 国防法规",
-                    "radio": 53,
-                    "multiple": 31,
-                    "decide": 32,
-                    "fill": 0,
-                    "data": "2.json"
-                },
-                {
-                    "title": "第三章 国防历史与国防建设",
-                    "radio": 240,
-                    "multiple": 65,
-                    "decide": 101,
-                    "fill": 0,
-                    "data": "3.json"
-                },
-                {
-                    "title": "第四章 军事高技术",
-                    "radio": 142,
-                    "multiple": 30,
-                    "decide": 75,
-                    "fill": 0,
-                    "data": "4.json"
-                },
-                {
-                    "title": "第五章 信息化战争",
-                    "radio": 94,
-                    "multiple": 35,
-                    "decide": 71,
-                    "fill": 0,
-                    "data": "5.json"
-                }
-            ],
-            "chinese": "军理上"
-        },
-        {
-            "id": "junli2",
-            "length": 2,
-            "content": [
-                {
-                    "title": "第一章 军事思想",
-                    "radio": 289,
-                    "multiple": 101,
-                    "decide": 459,
-                    "fill": 0,
-                    "data": "1.json"
-                },
-                {
-                    "title": "第二章 周边安全环境",
-                    "radio": 254,
-                    "multiple": 219,
-                    "decide": 676,
-                    "fill": 0,
-                    "data": "3.json"
-                }
-            ],
-            "chinese": "军理下"
         },
         {
             "id": "clang1",
