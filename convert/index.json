@@ -1,5 +1,5 @@
 {
-    "version": "2021-12-01 15:31:22",
+    "version": "2021-12-01 19:06:05",
     "content": [
         {
             "id": "maogai",
@@ -88,9 +88,9 @@
                 },
                 {
                     "title": "第十章 第二节 发展社会主义民主政治",
-                    "radio": 29,
+                    "radio": 30,
                     "multiple": 18,
-                    "decide": 13,
+                    "decide": 12,
                     "fill": 0,
                     "data": "10.2.json"
                 },
