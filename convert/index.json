@@ -1,5 +1,5 @@
 {
-    "version": "2021-12-01 19:06:05",
+    "version": "2021-12-02 15:45:36",
     "content": [
         {
             "id": "maogai",
@@ -175,31 +175,31 @@
                 },
                 {
                     "title": "第二章 实践与认识及其发展规律",
-                    "radio": 87,
-                    "multiple": 76,
-                    "decide": 38,
+                    "radio": 86,
+                    "multiple": 77,
+                    "decide": 117,
                     "fill": 0,
                     "data": "2.json"
                 },
                 {
                     "title": "第三章   人类社会及其发展规律",
-                    "radio": 66,
-                    "multiple": 30,
-                    "decide": 30,
+                    "radio": 65,
+                    "multiple": 31,
+                    "decide": 123,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
                     "title": "第四章 资本主义的本质及规律",
-                    "radio": 126,
-                    "multiple": 79,
-                    "decide": 120,
+                    "radio": 125,
+                    "multiple": 80,
+                    "decide": 125,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
                     "title": "第五章  资本主义的发展及其趋势",
-                    "radio": 66,
+                    "radio": 71,
                     "multiple": 32,
                     "decide": 122,
                     "fill": 0,
@@ -580,13 +580,13 @@
         },
         {
             "id": "feedback",
-            "chinese": "反馈",
+            "chinese": "Q&A",
             "length": 1,
             "content": [
                 {
-                    "title": "打开看看",
-                    "radio": 3,
-                    "multiple": 3,
+                    "title": "题库相关",
+                    "radio": 7,
+                    "multiple": 4,
                     "decide": 0,
                     "fill": 0,
                     "data": "1.json"

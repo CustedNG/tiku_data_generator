@@ -59,7 +59,7 @@ def parse(dir):
         with open(dir + file.replace('.xls', '.json'), 'w') as f:
             f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
 
-    print(f'{dir}：共解析了{ti_count}道题')
+    print(f'{dir}：解析了{ti_count}道题')
 
     if len(skip_files) > 0:
         raise Exception('skip files:', skip_files)

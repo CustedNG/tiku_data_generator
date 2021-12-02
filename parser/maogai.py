@@ -107,4 +107,4 @@ def parse(doc_dir: str):
         with open(doc_dir + file.replace('.txt', '.json'), 'w') as f:
             f.write(json.dumps(ti_list, ensure_ascii=False, indent=4))
 
-    print(f'{doc_dir}: 共解析了{all_ti_count}道题')
+    print(f'{doc_dir}: 解析了{all_ti_count}道题')

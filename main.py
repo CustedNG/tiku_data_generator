@@ -14,7 +14,7 @@ subject_map = {
     'jinxiandaishi': {'name': '近代史', 'func': jindaishi},
     'sixiu': {'name': '思修', 'func': not_implement},
     'makesi': {'name': '马克思', 'func': maogai},
-    'feedback': {'name': '反馈', 'func': maogai},
+    'feedback': {'name': 'Q&A', 'func': maogai},
 }
 
 if __name__ == '__main__':

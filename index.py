@@ -71,6 +71,12 @@ def generate(enabled_subjects: dict):
                     unit_ti = json.load(f)
 
                     for ti in unit_ti:
+                        try:
+                            if len(ti['options']) > 4:
+                                print(f'{subject} {file} {ti["title"]}: 选项数目大于4')
+                        except KeyError:
+                            if subject in const.full_support_subject:
+                                print(f'{subject} {file} {ti}')
                         if ti['type'] == 0:
                             radio += 1
                         elif ti['type'] == 1:
