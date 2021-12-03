@@ -1,5 +1,5 @@
 {
-    "version": "2021-12-02 15:45:36",
+    "version": "2021-12-03 17:58:35",
     "content": [
         {
             "id": "maogai",
@@ -199,9 +199,9 @@
                 },
                 {
                     "title": "第五章  资本主义的发展及其趋势",
-                    "radio": 71,
+                    "radio": 70,
                     "multiple": 32,
-                    "decide": 122,
+                    "decide": 123,
                     "fill": 0,
                     "data": "5.json"
                 },

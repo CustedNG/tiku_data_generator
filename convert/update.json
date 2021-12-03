@@ -1,8 +1,8 @@
 {
-    "newest": 88,
-    "android": "https://cdn2.cust.app/uploads/ToastTiku_88_Arm64.apk",
+    "newest": 91,
+    "android": "https://cdn2.cust.app/uploads/ToastTiku_91_Arm64.apk",
     "ios": "https://apps.apple.com/cn/app/toast-%E9%A2%98%E5%BA%93/id1580345312",
-    "iosbuild": 88,
+    "iosbuild": 91,
     "min": 76,
-    "changelog": "新版本出炉了，看看吗？"
+    "changelog": "修复考试模式选择科目无效"
 }
