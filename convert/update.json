@@ -1,8 +1,9 @@
 {
-    "newest": 91,
-    "android": "https://cdn2.cust.app/uploads/ToastTiku_91_Arm64.apk",
+    "newest": 97,
+    "android": "https://cdn2.cust.app/uploads/ToastTiku_97_Arm64.apk",
     "ios": "https://apps.apple.com/cn/app/toast-%E9%A2%98%E5%BA%93/id1580345312",
-    "iosbuild": 91,
+    "iosbuild": 97,
+    "androidbuild": 97,
     "min": 76,
-    "changelog": "修复考试模式选择科目无效"
+    "changelog": "新增考试历史记录、优化考试模式题目数量选择器、为各种类型的题单独编号 and more..."
 }
