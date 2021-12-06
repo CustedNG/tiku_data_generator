@@ -72,8 +72,11 @@ def generate(enabled_subjects: dict):
 
                     for ti in unit_ti:
                         try:
-                            if len(ti['options']) > 4:
-                                print(f'{subject} {file} {ti["title"]}: 选项数目大于4')
+                            option_len = len(ti['options'])
+                            if option_len > 4:
+                                print(f'{subject} {file} {ti["question"]}: 选项数目大于4')
+                            if option_len == 3:
+                                print(f'{subject} {file} {ti["question"]}: 选项数目为3')
                         except KeyError:
                             if subject in const.full_support_subject:
                                 print(f'{subject} {file} {ti}')
