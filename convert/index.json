@@ -1,5 +1,5 @@
 {
-    "version": "2021-12-05 11:32:04",
+    "version": "2021-12-06 11:41:37",
     "content": [
         {
             "id": "maogai",
@@ -238,80 +238,80 @@
             "content": [
                 {
                     "title": "第一章",
-                    "radio": 61,
-                    "multiple": 34,
+                    "radio": 62,
+                    "multiple": 35,
                     "decide": 0,
                     "fill": 0,
                     "data": "1.json"
                 },
                 {
                     "title": "第二章",
-                    "radio": 101,
-                    "multiple": 23,
+                    "radio": 102,
+                    "multiple": 24,
                     "decide": 0,
                     "fill": 0,
                     "data": "2.json"
                 },
                 {
                     "title": "第三章",
-                    "radio": 81,
-                    "multiple": 24,
+                    "radio": 82,
+                    "multiple": 25,
                     "decide": 0,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
                     "title": "第四章",
-                    "radio": 87,
-                    "multiple": 49,
+                    "radio": 88,
+                    "multiple": 50,
                     "decide": 0,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
                     "title": "第五章",
-                    "radio": 65,
-                    "multiple": 30,
+                    "radio": 66,
+                    "multiple": 31,
                     "decide": 0,
                     "fill": 0,
                     "data": "5.json"
                 },
                 {
                     "title": "第六章",
-                    "radio": 76,
-                    "multiple": 35,
+                    "radio": 77,
+                    "multiple": 36,
                     "decide": 0,
                     "fill": 0,
                     "data": "6.json"
                 },
                 {
                     "title": "第七章",
-                    "radio": 52,
-                    "multiple": 47,
+                    "radio": 53,
+                    "multiple": 48,
                     "decide": 0,
                     "fill": 0,
                     "data": "7.json"
                 },
                 {
                     "title": "第八章",
-                    "radio": 104,
-                    "multiple": 37,
+                    "radio": 105,
+                    "multiple": 38,
                     "decide": 0,
                     "fill": 0,
                     "data": "8.json"
                 },
                 {
                     "title": "第九章",
-                    "radio": 74,
-                    "multiple": 37,
+                    "radio": 75,
+                    "multiple": 38,
                     "decide": 0,
                     "fill": 0,
                     "data": "9.json"
                 },
                 {
                     "title": "第十章",
-                    "radio": 60,
-                    "multiple": 35,
+                    "radio": 61,
+                    "multiple": 36,
                     "decide": 0,
                     "fill": 0,
                     "data": "10.json"
@@ -554,7 +554,7 @@
             "content": [
                 {
                     "title": "单选题",
-                    "radio": 378,
+                    "radio": 379,
                     "multiple": 0,
                     "decide": 0,
                     "fill": 0,
@@ -562,7 +562,7 @@
                 },
                 {
                     "title": "多选题",
-                    "radio": 163,
+                    "radio": 164,
                     "multiple": 0,
                     "decide": 0,
                     "fill": 0,
@@ -572,7 +572,7 @@
                     "title": "判断题",
                     "radio": 0,
                     "multiple": 0,
-                    "decide": 289,
+                    "decide": 290,
                     "fill": 0,
                     "data": "3.json"
                 }

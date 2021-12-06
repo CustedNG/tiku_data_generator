@@ -23,7 +23,7 @@ def parse(dir):
         is_single = file.endswith('single.xls')
         data = xlrd.open_workbook(dir + file)
         table = data.sheets()[0]
-        for i in range(2, table.nrows):
+        for i in range(1, table.nrows):
             if table.row_values(i)[0]:
                 answers = []
                 for item in table.cell(i, 6).value.strip():

@@ -22,7 +22,7 @@ def parse(dir):
         data = xlrd.open_workbook(dir + file)
         table = data.sheets()[0]
         if '3' in file:
-            for i in range(2, table.nrows):
+            for i in range(1, table.nrows):
                 if table.row_values(i)[0]:
                     ti_list.append({
                         'question': table.cell(i, 1).value,
@@ -31,7 +31,7 @@ def parse(dir):
                         'type': 3
                     })
         elif '1' in file:
-            for i in range(2, table.nrows):
+            for i in range(1, table.nrows):
                 if table.row_values(i)[0]:
                     ti_list.append({
                         'question': table.cell(i, 1).value,
@@ -40,7 +40,7 @@ def parse(dir):
                         'type': 0
                     })
         elif '2' in file:
-            for i in range(2, table.nrows):
+            for i in range(1, table.nrows):
                 if table.row_values(i)[0]:
                     answers = []
                     for item in table.cell(i, 6).value:
