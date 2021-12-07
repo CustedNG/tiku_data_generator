@@ -1,5 +1,5 @@
 {
-    "version": "2021-12-06 20:47:34",
+    "version": "2021-12-07 10:16:07",
     "content": [
         {
             "id": "maogai",
@@ -321,53 +321,61 @@
         {
             "id": "sixiu",
             "chinese": "思修",
-            "length": 6,
+            "length": 7,
             "content": [
                 {
-                    "title": "第一章 人生的青春之问",
-                    "radio": 79,
-                    "multiple": 50,
-                    "decide": 70,
+                    "title": "绪论",
+                    "radio": 5,
+                    "multiple": 5,
+                    "decide": 15,
+                    "fill": 0,
+                    "data": "0.json"
+                },
+                {
+                    "title": "第一章  领悟人生真谛  把握人生方向",
+                    "radio": 65,
+                    "multiple": 39,
+                    "decide": 59,
                     "fill": 0,
                     "data": "1.json"
                 },
                 {
-                    "title": "第二章 坚定理想信念",
-                    "radio": 72,
-                    "multiple": 50,
-                    "decide": 70,
+                    "title": "第二章 追求远大理想 坚定崇高信念",
+                    "radio": 62,
+                    "multiple": 23,
+                    "decide": 52,
                     "fill": 0,
                     "data": "2.json"
                 },
                 {
-                    "title": "第三章 弘扬中国精神",
-                    "radio": 80,
-                    "multiple": 51,
-                    "decide": 69,
+                    "title": "第三章 继承优良传统 弘扬中国精神",
+                    "radio": 90,
+                    "multiple": 61,
+                    "decide": 101,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
-                    "title": "第四章 践行社会主义核心价值观",
-                    "radio": 80,
-                    "multiple": 40,
-                    "decide": 78,
+                    "title": "第四章 明确价值要求 践行价值准则",
+                    "radio": 53,
+                    "multiple": 33,
+                    "decide": 53,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
-                    "title": "第五章 明大德守公德严私德",
-                    "radio": 160,
-                    "multiple": 100,
-                    "decide": 140,
+                    "title": "第五章  明大德守公德严私德",
+                    "radio": 144,
+                    "multiple": 85,
+                    "decide": 117,
                     "fill": 0,
                     "data": "5.json"
                 },
                 {
-                    "title": "第六章 尊法学法守法用法",
-                    "radio": 160,
-                    "multiple": 100,
-                    "decide": 140,
+                    "title": "第六章 学习法治思想  提升法治素养",
+                    "radio": 187,
+                    "multiple": 120,
+                    "decide": 192,
                     "fill": 0,
                     "data": "6.json"
                 }
