@@ -1,10 +1,10 @@
 {
-    "version": "2021-12-07 10:16:07",
+    "version": "2021-12-08 10:55:34",
     "content": [
         {
             "id": "maogai",
             "chinese": "毛概",
-            "length": 18,
+            "length": 19,
             "content": [
                 {
                     "title": "第一章   毛泽东思想及其历史地位",
@@ -117,6 +117,14 @@
                     "decide": 15,
                     "fill": 0,
                     "data": "10.5.json"
+                },
+                {
+                    "title": "第十一章 “四个全面”战略布局",
+                    "radio": 45,
+                    "multiple": 27,
+                    "decide": 22,
+                    "fill": 0,
+                    "data": "11.json"
                 },
                 {
                     "title": "第十一章  第三节 全面依法治国",
