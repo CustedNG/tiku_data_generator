@@ -69,17 +69,23 @@ def generate(enabled_subjects: dict):
                 unit_path = subject_path + file
                 with open(unit_path, 'r', encoding='utf-8') as f:
                     unit_ti = json.load(f)
+                    full_support: bool = subject in const.full_support_subject
 
                     for ti in unit_ti:
-                        try:
-                            option_len = len(ti['options'])
-                            if option_len > 4:
-                                print(f'{subject} {file} {ti["question"]}: 选项数目大于4')
-                            if option_len == 3:
-                                print(f'{subject} {file} {ti["question"]}: 选项数目为3')
-                        except KeyError:
-                            if subject in const.full_support_subject:
+                        if full_support:
+                            try:
+                                option_len = len(ti['options'])
+                                if option_len > 4:
+                                    print(f'{subject} {file} {ti["question"]}: 选项数目大于4')
+                                if option_len == 3:
+                                    print(f'{subject} {file} {ti["question"]}: 选项数目为3')
+                                answer = ti['answer']
+                                if answer is list:
+                                    if len(answer) == 0:
+                                        print(f'{subject} {file} {ti}: 无答案')
+                            except KeyError:
                                 print(f'{subject} {file} {ti}')
+
                         if ti['type'] == 0:
                             radio += 1
                         elif ti['type'] == 1:
