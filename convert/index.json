@@ -1,5 +1,5 @@
 {
-    "version": "2021-12-24 20:20:40",
+    "version": "2021-12-24 21:07:43",
     "content": [
         {
             "id": "maogai",
@@ -349,9 +349,9 @@
                 },
                 {
                     "title": "第二章 追求远大理想 坚定崇高信念",
-                    "radio": 62,
-                    "multiple": 23,
-                    "decide": 52,
+                    "radio": 63,
+                    "multiple": 24,
+                    "decide": 50,
                     "fill": 0,
                     "data": "2.json"
                 },
