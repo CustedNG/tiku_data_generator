@@ -79,6 +79,8 @@ def generate(enabled_subjects: dict):
                                     print(f'{subject} {file} {ti["question"]}: 选项数目大于4')
                                 if option_len == 3:
                                     print(f'{subject} {file} {ti["question"]}: 选项数目为3')
+                                if option_len == 0:
+                                    print(f'{subject} {file} {ti["question"]}: 选项数目为0')
                                 answer = ti['answer']
                                 if answer is list:
                                     if len(answer) == 0:

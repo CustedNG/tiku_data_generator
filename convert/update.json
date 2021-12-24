@@ -1,9 +1,9 @@
 {
-    "newest": 97,
-    "android": "https://cdn2.cust.app/uploads/ToastTiku_97_Arm64.apk",
+    "newest": 109,
+    "android": "https://cdn2.cust.app/uploads/ToastTiku_111_Arm64.apk",
     "ios": "https://apps.apple.com/cn/app/toast-%E9%A2%98%E5%BA%93/id1580345312",
-    "iosbuild": 97,
-    "androidbuild": 97,
+    "iosbuild": 109,
+    "androidbuild": 111,
     "min": 76,
-    "changelog": "新增考试历史记录、优化考试模式题目数量选择器、为各种类型的题单独编号 and more..."
+    "changelog": "!!!!请注意，此次更新会清除之前的所有答题记录\n新增背题模式、修复白屏、优化做题记录保存逻辑、支持删除单个单元的做题记录"
 }
