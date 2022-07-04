@@ -45,17 +45,6 @@
     },
     {
         "options": [
-            "url:/QuestionPhotoes/5sig_a.png",
-            "url:/QuestionPhotoes/5sig_b.png",
-            "url:/QuestionPhotoes/5sig_c.png",
-            "url:/QuestionPhotoes/5sig_d.png"
-        ],
-        "question": "如图所示的4棵二叉树中，______不是完全二叉树。",
-        "answer": 0,
-        "type": 0
-    },
-    {
-        "options": [
             "N2-1",
             "N2+1",
             "N2",
@@ -254,19 +243,6 @@
         "answer_num": 1,
         "img_list": [
             null,
-            null,
-            null
-        ]
-    },
-    {
-        "question": "如图所示，该二叉树的中序遍历序列是____________。",
-        "answer": [
-            "ABCDEGF"
-        ],
-        "type": 2,
-        "answer_num": 1,
-        "img_list": [
-            "url:/QuestionPhotoes/4blank.png",
             null,
             null
         ]
