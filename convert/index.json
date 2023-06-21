@@ -1,5 +1,5 @@
 {
-    "version": "2022-07-04 12:49:59",
+    "version": "2023-06-21 21:34:19",
     "content": [
         {
             "id": "maogai",
@@ -8,65 +8,65 @@
             "content": [
                 {
                     "title": "第一章   毛泽东思想及其历史地位",
-                    "radio": 30,
-                    "multiple": 18,
-                    "decide": 12,
+                    "radio": 48,
+                    "multiple": 30,
+                    "decide": 22,
                     "fill": 0,
                     "data": "1.json"
                 },
                 {
                     "title": "第二章  新民主主义革命理论",
-                    "radio": 30,
-                    "multiple": 18,
-                    "decide": 13,
+                    "radio": 49,
+                    "multiple": 28,
+                    "decide": 24,
                     "fill": 0,
                     "data": "2.json"
                 },
                 {
                     "title": "第三章 社会主义改造理论",
-                    "radio": 25,
-                    "multiple": 16,
-                    "decide": 16,
+                    "radio": 61,
+                    "multiple": 20,
+                    "decide": 21,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
                     "title": "第四章 社会主义建设道路初步探索的理论成果",
-                    "radio": 31,
-                    "multiple": 22,
-                    "decide": 24,
+                    "radio": 49,
+                    "multiple": 25,
+                    "decide": 26,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
                     "title": "第五章 邓小平理论",
-                    "radio": 30,
-                    "multiple": 18,
-                    "decide": 11,
+                    "radio": 57,
+                    "multiple": 20,
+                    "decide": 22,
                     "fill": 0,
                     "data": "5.json"
                 },
                 {
                     "title": "第六章 “三个代表”重要思想",
-                    "radio": 30,
-                    "multiple": 18,
-                    "decide": 13,
+                    "radio": 128,
+                    "multiple": 23,
+                    "decide": 0,
                     "fill": 0,
                     "data": "6.json"
                 },
                 {
                     "title": "第七章 科学发展观",
-                    "radio": 34,
-                    "multiple": 18,
-                    "decide": 12,
+                    "radio": 50,
+                    "multiple": 29,
+                    "decide": 20,
                     "fill": 0,
                     "data": "7.json"
                 },
                 {
                     "title": "第八章 习近平新时代中国特色社会主义思想及其历史地位",
-                    "radio": 32,
-                    "multiple": 22,
-                    "decide": 15,
+                    "radio": 50,
+                    "multiple": 39,
+                    "decide": 13,
                     "fill": 0,
                     "data": "8.json"
                 },
@@ -169,61 +169,61 @@
                     "title": "导论",
                     "radio": 32,
                     "multiple": 27,
-                    "decide": 22,
+                    "decide": 27,
                     "fill": 0,
                     "data": "0.json"
                 },
                 {
                     "title": "第一章 世界的物质性及发展规律",
-                    "radio": 218,
+                    "radio": 219,
                     "multiple": 113,
-                    "decide": 174,
+                    "decide": 179,
                     "fill": 0,
                     "data": "1.json"
                 },
                 {
                     "title": "第二章 实践与认识及其发展规律",
-                    "radio": 86,
-                    "multiple": 77,
-                    "decide": 117,
+                    "radio": 80,
+                    "multiple": 76,
+                    "decide": 44,
                     "fill": 0,
                     "data": "2.json"
                 },
                 {
-                    "title": "第三章   人类社会及其发展规律",
+                    "title": "第三章 人类社会及其发展规律",
                     "radio": 65,
                     "multiple": 31,
-                    "decide": 123,
+                    "decide": 35,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
-                    "title": "第四章 资本主义的本质及规律",
-                    "radio": 125,
+                    "title": "第四章 资本主义的形成及其本质",
+                    "radio": 126,
                     "multiple": 80,
-                    "decide": 125,
+                    "decide": 120,
                     "fill": 0,
                     "data": "4.json"
                 },
                 {
-                    "title": "第五章  资本主义的发展及其趋势",
-                    "radio": 70,
-                    "multiple": 32,
-                    "decide": 123,
+                    "title": "第五章 资本主义发展的历史进程",
+                    "radio": 66,
+                    "multiple": 33,
+                    "decide": 126,
                     "fill": 0,
                     "data": "5.json"
                 },
                 {
-                    "title": "第六章   社会主义社会及其发展",
-                    "radio": 41,
+                    "title": "第六章 社会主义社会及其发展",
+                    "radio": 46,
                     "multiple": 34,
-                    "decide": 94,
+                    "decide": 97,
                     "fill": 0,
                     "data": "6.json"
                 },
                 {
                     "title": "第七章 共产主义是人类最崇高的社会理想",
-                    "radio": 21,
+                    "radio": 20,
                     "multiple": 25,
                     "decide": 44,
                     "fill": 0,
@@ -578,8 +578,8 @@
                 },
                 {
                     "title": "多选题",
-                    "radio": 164,
-                    "multiple": 0,
+                    "radio": 0,
+                    "multiple": 164,
                     "decide": 0,
                     "fill": 0,
                     "data": "2.json"

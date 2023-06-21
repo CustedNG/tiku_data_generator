@@ -1,5 +1,5 @@
 import time
-import const
+import const, config
 import os
 import json
 
@@ -139,3 +139,24 @@ def generate(enabled_subjects: dict):
             json.dump(index_dict, f, ensure_ascii=False, indent=4)
 
     print(f"\n{index_path}: 现有 {len(index_dict['content'])} 科的索引，更新 {len(enabled_subjects)} 科索引。")
+
+
+if __name__ == '__main__':
+    start_time = time.time()
+
+    subjects = config.subject_map.keys()
+    enabled_subjects: dict = {}
+    for subject in subjects:
+        path = const.convert_result_dir + subject + '/'
+
+        if os.path.exists(path):
+            info = config.subject_map[subject]
+            enabled_subjects[subject] = info['name']
+        else:
+            print(f"{path}: 不存在，跳过")
+
+    # 生成题库索引
+    generate(enabled_subjects)
+
+    end_time = time.time()
+    print(f"\n生成数据耗时：{end_time - start_time} 秒")

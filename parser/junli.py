@@ -50,7 +50,7 @@ def parse(dir):
                         'question': table.cell(i, 1).value,
                         'options': [table.cell(i, 2).value, table.cell(i, 3).value, table.cell(i, 4).value, table.cell(i, 5).value],
                         'answer': answers,
-                        'type': 0
+                        'type': 1
                     })
         else:
             print('Unknown file type: ' + file)
@@ -62,4 +62,4 @@ def parse(dir):
     print(f'{dir}：解析了{ti_count}道题')
 
     if len(skip_files) > 0:
-        raise Exception('skip files:', skip_files)
+        print('skip files:', skip_files)
