@@ -1,12 +1,12 @@
 # 题库数据生成器
-主要将.docx/.xls/.txt文档中的题目，提取并生成json格式的题库数据。
+主要将 `.docx/.xls/.txt` 文档中的题目，提取并生成 `json` 格式的题库数据。
 
 ## 使用
-1. 复制 `.docx` 等类型文件至 `convert/xxx` 内
+1. 复制 `.docx` 等类型文件至 `convert/xxx` 内 （xxx 为科目id）
 2. （如果是 `.docx`）`python3 docx2txt.py convert/xxx`
 3. `python3 main.py`
-4. 修改生成的 `.txt` （如果有问题，重复3）
-5. `python3 index.py`
+4. 查看 `.json` 是否存在问题，如果存在问题，对照原 `.docx` 修改生成的 `.txt` （如果有问题，跳转3）
+5. （可选，如果只需要生成索引）`python3 index.py`
 
 ## 结构
 - main.py 解析
@@ -97,8 +97,8 @@ content.content.fill | 填空题数量
 content.content.data | 题目数据文件名 
 
 **注意事项**：
-- 索引的链接为：{BACKEND_URL}/res/tiku/index.json，如示例：https://v2.custed.lolli.tech/res/tiku/index.json
-- 每个单元的题目的链接为：{BACKEND_URL}/res/tiku/{该科目的名称的拼音}/{data}，如示例：https://v2.custed.lolli.tech/res/tiku/maogai/1.json
+- 索引的链接为：{BACKEND_URL}/res/tiku/index.json，如示例：https://WEBSITE/res/tiku/index.json
+- 每个单元的题目的链接为：{BACKEND_URL}/res/tiku/{该科目的名称的拼音}/{data}，如示例：https://WEBSITE/res/tiku/maogai/1.json
 
 
 #### 单个题目
