@@ -1,5 +1,5 @@
 {
-    "version": "2023-11-05 13:32:07",
+    "version": "2023-11-05 13:38:25",
     "content": [
         {
             "id": "maogai",
@@ -631,7 +631,7 @@
                     "data": "2.json"
                 },
                 {
-                    "title": "3",
+                    "title": "第三章 坚持党的全面领导",
                     "radio": 40,
                     "multiple": 20,
                     "decide": 0,
@@ -639,7 +639,7 @@
                     "data": "3.json"
                 },
                 {
-                    "title": "4",
+                    "title": "第四章 坚持以人民为中心",
                     "radio": 40,
                     "multiple": 20,
                     "decide": 0,
@@ -663,7 +663,7 @@
                     "data": "6.json"
                 },
                 {
-                    "title": "7",
+                    "title": "第七章 社会主义现代化建设的教育",
                     "radio": 30,
                     "multiple": 20,
                     "decide": 10,
@@ -703,7 +703,7 @@
                     "data": "11.json"
                 },
                 {
-                    "title": "12",
+                    "title": "第十二章 建设社会主义生态文明",
                     "radio": 40,
                     "multiple": 24,
                     "decide": 15,
@@ -719,7 +719,7 @@
                     "data": "13.json"
                 },
                 {
-                    "title": "14",
+                    "title": "第十四章 建设巩固国防和强大人民军队",
                     "radio": 33,
                     "multiple": 28,
                     "decide": 15,
