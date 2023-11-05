@@ -1,5 +1,5 @@
 {
-    "version": "2023-06-30 18:44:07",
+    "version": "2023-11-05 13:32:07",
     "content": [
         {
             "id": "maogai",
@@ -40,9 +40,9 @@
                 },
                 {
                     "title": "第五章 邓小平理论",
-                    "radio": 57,
+                    "radio": 58,
                     "multiple": 20,
-                    "decide": 22,
+                    "decide": 21,
                     "fill": 0,
                     "data": "5.json"
                 },
@@ -606,6 +606,149 @@
                     "decide": 0,
                     "fill": 0,
                     "data": "1.json"
+                }
+            ]
+        },
+        {
+            "id": "xi",
+            "chinese": "习思想",
+            "length": 17,
+            "content": [
+                {
+                    "title": "第一章 新时代坚持和发展中国特色社会主义",
+                    "radio": 28,
+                    "multiple": 20,
+                    "decide": 13,
+                    "fill": 0,
+                    "data": "1.json"
+                },
+                {
+                    "title": "第二章 以中国式现代化推进中华民族伟大复兴",
+                    "radio": 30,
+                    "multiple": 21,
+                    "decide": 3,
+                    "fill": 0,
+                    "data": "2.json"
+                },
+                {
+                    "title": "3",
+                    "radio": 40,
+                    "multiple": 20,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "3.json"
+                },
+                {
+                    "title": "4",
+                    "radio": 40,
+                    "multiple": 20,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "4.json"
+                },
+                {
+                    "title": "第五章 全面深化改革",
+                    "radio": 28,
+                    "multiple": 19,
+                    "decide": 3,
+                    "fill": 0,
+                    "data": "5.json"
+                },
+                {
+                    "title": "第六章 推动高质量发展",
+                    "radio": 34,
+                    "multiple": 26,
+                    "decide": 0,
+                    "fill": 0,
+                    "data": "6.json"
+                },
+                {
+                    "title": "7",
+                    "radio": 30,
+                    "multiple": 20,
+                    "decide": 10,
+                    "fill": 0,
+                    "data": "7.json"
+                },
+                {
+                    "title": "第八章 发展全过程人民民主",
+                    "radio": 31,
+                    "multiple": 19,
+                    "decide": 10,
+                    "fill": 0,
+                    "data": "8.json"
+                },
+                {
+                    "title": "第九章 全面依法治国",
+                    "radio": 16,
+                    "multiple": 16,
+                    "decide": 9,
+                    "fill": 0,
+                    "data": "9.json"
+                },
+                {
+                    "title": "第十章 建设社会主义文化强国",
+                    "radio": 18,
+                    "multiple": 17,
+                    "decide": 5,
+                    "fill": 0,
+                    "data": "10.json"
+                },
+                {
+                    "title": "第十一章 以保障和改善民生为重点加强社会建设",
+                    "radio": 22,
+                    "multiple": 11,
+                    "decide": 14,
+                    "fill": 0,
+                    "data": "11.json"
+                },
+                {
+                    "title": "12",
+                    "radio": 40,
+                    "multiple": 24,
+                    "decide": 15,
+                    "fill": 0,
+                    "data": "12.json"
+                },
+                {
+                    "title": "第十三章 维护和塑造国家安全",
+                    "radio": 26,
+                    "multiple": 19,
+                    "decide": 10,
+                    "fill": 0,
+                    "data": "13.json"
+                },
+                {
+                    "title": "14",
+                    "radio": 33,
+                    "multiple": 28,
+                    "decide": 15,
+                    "fill": 0,
+                    "data": "14.json"
+                },
+                {
+                    "title": "第十五章 坚持",
+                    "radio": 30,
+                    "multiple": 19,
+                    "decide": 9,
+                    "fill": 0,
+                    "data": "15.json"
+                },
+                {
+                    "title": "第十六章 中国特色大国外交和推动构建人类命运共同体",
+                    "radio": 30,
+                    "multiple": 20,
+                    "decide": 10,
+                    "fill": 0,
+                    "data": "16.json"
+                },
+                {
+                    "title": "第十七章 全面从严治党",
+                    "radio": 30,
+                    "multiple": 20,
+                    "decide": 10,
+                    "fill": 0,
+                    "data": "17.json"
                 }
             ]
         }

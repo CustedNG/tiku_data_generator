@@ -1,0 +1,4 @@
+docx
+pydocx
+xlrd
+python-docx

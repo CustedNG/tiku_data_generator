@@ -8,5 +8,6 @@ subject_map = {
     'jinxiandaishi': {'name': '近代史', 'func': jindaishi},
     'sixiu': {'name': '思修', 'func': maogai},
     'makesi': {'name': '马克思', 'func': maogai},
-    'feedback': {'name': 'Q&A', 'func': maogai},
+    #'feedback': {'name': 'Q&A', 'func': maogai},
+    'xi': {'name': '习思想', 'func': maogai}
 }
