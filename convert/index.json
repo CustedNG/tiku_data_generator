@@ -1,5 +1,5 @@
 {
-    "version": "2023-11-05 13:38:25",
+    "version": "2023-11-07 21:43:18",
     "content": [
         {
             "id": "maogai",
@@ -595,21 +595,6 @@
             ]
         },
         {
-            "id": "feedback",
-            "chinese": "Q&A",
-            "length": 1,
-            "content": [
-                {
-                    "title": "题库相关",
-                    "radio": 7,
-                    "multiple": 4,
-                    "decide": 0,
-                    "fill": 0,
-                    "data": "1.json"
-                }
-            ]
-        },
-        {
             "id": "xi",
             "chinese": "习思想",
             "length": 17,
@@ -617,7 +602,7 @@
                 {
                     "title": "第一章 新时代坚持和发展中国特色社会主义",
                     "radio": 28,
-                    "multiple": 20,
+                    "multiple": 21,
                     "decide": 13,
                     "fill": 0,
                     "data": "1.json"
@@ -632,17 +617,17 @@
                 },
                 {
                     "title": "第三章 坚持党的全面领导",
-                    "radio": 40,
+                    "radio": 30,
                     "multiple": 20,
-                    "decide": 0,
+                    "decide": 10,
                     "fill": 0,
                     "data": "3.json"
                 },
                 {
                     "title": "第四章 坚持以人民为中心",
-                    "radio": 40,
+                    "radio": 30,
                     "multiple": 20,
-                    "decide": 0,
+                    "decide": 10,
                     "fill": 0,
                     "data": "4.json"
                 },
@@ -688,9 +673,9 @@
                 },
                 {
                     "title": "第十章 建设社会主义文化强国",
-                    "radio": 18,
+                    "radio": 31,
                     "multiple": 17,
-                    "decide": 5,
+                    "decide": 4,
                     "fill": 0,
                     "data": "10.json"
                 },

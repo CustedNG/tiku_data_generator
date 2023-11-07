@@ -8,6 +8,7 @@ import json
 
 
 answer_locator = '答案'
+option_reg = re.compile(r'([A-Z] {0,1}[、\.．，]{0,1} {0,1})([\s\S]*?)(?=\s*[A-Z]\.|$)')
 
 
 def parse(doc_dir: str):
@@ -76,13 +77,13 @@ def parse(doc_dir: str):
                     answer_idx = idx_num
                 idx_num += 1
             for option in ti_raw[1:answer_idx]:
-                all_temp_options = re.compile(r'([A|B|C|D|E|F|G][ ]*[、|\.|．]*[ ]*[^\s]+)').findall(option)
-                if all_temp_options:
-                    for ii in all_temp_options:
-                        replace_str = re.match(r'([A|B|C|D|E|F|G][ ]*[、|\.|．]*[ ]*)', ii)
-                        if ii:
-                            ii = ii.replace(replace_str.group(), '')
-                        options.append(ii.strip())
+                match = option_reg.findall(option)
+                if match:
+                    for item in match:
+                        option_content = item[1]
+                        option_content = re.sub(r'\s{10}.*', '', option_content)
+                        if option_content:
+                            options.append(option_content.strip())
 
             # 解析类型
             ti_type = 0

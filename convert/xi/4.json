@@ -689,62 +689,112 @@
     },
     {
         "question": "（   ）人民群众是创造历史的真正动力，但不是历史发展和社会进步的主体力量。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            1
+        ],
+        "type": 3
     },
     {
         "question": "（   ）民心是最大的政治，能够决定事业兴衰成败。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            0
+        ],
+        "type": 3
     },
     {
         "question": "（   ）江山就是人民，人民就是江山，这是由我们党的执政能力决定的。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            1
+        ],
+        "type": 3
     },
     {
         "question": "（   ）中国共产党坚持人民立场，只需要心中装着老百姓，时刻回应人民诉求即可。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            1
+        ],
+        "type": 3
     },
     {
         "question": "（   ）中国共产党的百年奋斗归根结底就是让中国人民过上好日子，实现国家富强和民族振兴。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            0
+        ],
+        "type": 3
     },
     {
         "question": "（   ）国家领导人是党的工作的最高裁决者和最终评判者。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            1
+        ],
+        "type": 3
     },
     {
         "question": "（   ）坚持以人民为中心的发展思想是抽象的、现实的。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            1
+        ],
+        "type": 3
     },
     {
         "question": "（   ）群众路线是中国共产党的生命线和根本工作路线，是我党永葆青春活力和战斗力的重要传家宝。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            0
+        ],
+        "type": 3
     },
     {
         "question": "（   ）共同富裕指的仅仅是经济问题。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            1
+        ],
+        "type": 3
     },
     {
         "question": "（   ）现代化的最终目标是实现人自由而全面的发展。",
-        "options": [],
-        "answer": [],
-        "type": 0
+        "options": [
+            "对",
+            "错"
+        ],
+        "answer": [
+            0
+        ],
+        "type": 3
     }
 ]

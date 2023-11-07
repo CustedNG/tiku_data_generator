@@ -17,6 +17,8 @@ answer_convert_map = {
     'Ｂ': 1,
     'Ｃ': 2,
     'Ｄ': 3,
+    '√': 0,
+    '×': 1,
 }
 
 convert_result_dir = 'convert/'
