@@ -24,4 +24,4 @@ answer_convert_map = {
 convert_result_dir = 'convert/'
 
 # 支持本生成器生成的科目，并非旧题库留下的数据的科目
-full_support_subject = ['maogai', 'makesi', 'junli', 'jinxiandaishi', 'sixiu']
+full_support_subject = ['maogai', 'makesi', 'junli', 'jinxiandaishi', 'sixiu', 'xi']

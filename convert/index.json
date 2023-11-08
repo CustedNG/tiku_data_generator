@@ -1,5 +1,5 @@
 {
-    "version": "2023-11-07 21:43:18",
+    "version": "2023-11-08 10:21:26",
     "content": [
         {
             "id": "maogai",
@@ -601,7 +601,7 @@
             "content": [
                 {
                     "title": "第一章 新时代坚持和发展中国特色社会主义",
-                    "radio": 28,
+                    "radio": 30,
                     "multiple": 21,
                     "decide": 13,
                     "fill": 0,
@@ -633,9 +633,9 @@
                 },
                 {
                     "title": "第五章 全面深化改革",
-                    "radio": 28,
-                    "multiple": 19,
-                    "decide": 3,
+                    "radio": 27,
+                    "multiple": 20,
+                    "decide": 12,
                     "fill": 0,
                     "data": "5.json"
                 },
@@ -665,25 +665,25 @@
                 },
                 {
                     "title": "第九章 全面依法治国",
-                    "radio": 16,
-                    "multiple": 16,
+                    "radio": 30,
+                    "multiple": 20,
                     "decide": 9,
                     "fill": 0,
                     "data": "9.json"
                 },
                 {
                     "title": "第十章 建设社会主义文化强国",
-                    "radio": 31,
-                    "multiple": 17,
-                    "decide": 4,
+                    "radio": 30,
+                    "multiple": 20,
+                    "decide": 10,
                     "fill": 0,
                     "data": "10.json"
                 },
                 {
                     "title": "第十一章 以保障和改善民生为重点加强社会建设",
-                    "radio": 22,
-                    "multiple": 11,
-                    "decide": 14,
+                    "radio": 23,
+                    "multiple": 15,
+                    "decide": 16,
                     "fill": 0,
                     "data": "11.json"
                 },
@@ -697,8 +697,8 @@
                 },
                 {
                     "title": "第十三章 维护和塑造国家安全",
-                    "radio": 26,
-                    "multiple": 19,
+                    "radio": 30,
+                    "multiple": 20,
                     "decide": 10,
                     "fill": 0,
                     "data": "13.json"
@@ -714,7 +714,7 @@
                 {
                     "title": "第十五章 坚持",
                     "radio": 30,
-                    "multiple": 19,
+                    "multiple": 20,
                     "decide": 9,
                     "fill": 0,
                     "data": "15.json"
