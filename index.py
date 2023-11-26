@@ -75,12 +75,10 @@ def generate(enabled_subjects: dict):
                         if full_support:
                             try:
                                 option_len = len(ti['options'])
-                                if option_len > 4:
-                                    print(f'{subject} {file} {ti["question"]}: 选项数目大于4')
-                                if option_len == 3:
-                                    print(f'{subject} {file} {ti["question"]}: 选项数目为3')
-                                if option_len == 0:
-                                    print(f'{subject} {file} {ti["question"]}: 选项数目为0')
+                                if option_len != 4 and (ti['type'] == 0 or ti['type'] == 1):
+                                    print(f'{subject} {file} {ti["question"]}: 选项数目不为4: {option_len}')
+                                elif option_len != 2 and ti['type'] == 3:
+                                    print(f'{subject} {file} {ti["question"]}: 选项数目不为2: {option_len}')
                                 answer = ti['answer']
                                 if answer is list:
                                     if len(answer) == 0:

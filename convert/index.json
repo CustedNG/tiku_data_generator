@@ -1,5 +1,5 @@
 {
-    "version": "2023-11-08 10:21:26",
+    "version": "2023-11-26 12:23:15",
     "content": [
         {
             "id": "maogai",
@@ -48,9 +48,9 @@
                 },
                 {
                     "title": "第六章 “三个代表”重要思想",
-                    "radio": 128,
+                    "radio": 53,
                     "multiple": 23,
-                    "decide": 0,
+                    "decide": 75,
                     "fill": 0,
                     "data": "6.json"
                 },
@@ -199,9 +199,9 @@
                 },
                 {
                     "title": "第四章 资本主义的形成及其本质",
-                    "radio": 126,
+                    "radio": 125,
                     "multiple": 80,
-                    "decide": 120,
+                    "decide": 121,
                     "fill": 0,
                     "data": "4.json"
                 },
@@ -633,17 +633,17 @@
                 },
                 {
                     "title": "第五章 全面深化改革",
-                    "radio": 27,
+                    "radio": 29,
                     "multiple": 20,
-                    "decide": 12,
+                    "decide": 10,
                     "fill": 0,
                     "data": "5.json"
                 },
                 {
                     "title": "第六章 推动高质量发展",
-                    "radio": 34,
-                    "multiple": 26,
-                    "decide": 0,
+                    "radio": 30,
+                    "multiple": 20,
+                    "decide": 10,
                     "fill": 0,
                     "data": "6.json"
                 },
@@ -657,8 +657,8 @@
                 },
                 {
                     "title": "第八章 发展全过程人民民主",
-                    "radio": 31,
-                    "multiple": 19,
+                    "radio": 30,
+                    "multiple": 20,
                     "decide": 10,
                     "fill": 0,
                     "data": "8.json"
