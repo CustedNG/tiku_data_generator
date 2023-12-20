@@ -1,5 +1,5 @@
 {
-    "version": "2023-12-20 15:04:15",
+    "version": "2023-12-20 15:24:53",
     "content": [
         {
             "id": "maogai",
@@ -163,7 +163,7 @@
         {
             "id": "makesi",
             "chinese": "马克思",
-            "length": 8,
+            "length": 9,
             "content": [
                 {
                     "title": "第零章 导论",
@@ -228,6 +228,14 @@
                     "decide": 5,
                     "fill": 0,
                     "data": "7.json"
+                },
+                {
+                    "title": "马克思主义宗教观专题",
+                    "radio": 5,
+                    "multiple": 4,
+                    "decide": 5,
+                    "fill": 0,
+                    "data": "8.json"
                 }
             ]
         },
